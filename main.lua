@@ -1,18 +1,21 @@
+-- #################### 外部プログラム読み込み (始まり) ####################
+composer = require("composer")
+-- #################### 外部プログラム読み込み (終わり) ####################
 
----------------------------------------------------------------------------------
---
--- main.lua
---
----------------------------------------------------------------------------------
 
--- hide the status bar
-display.setStatusBar( display.HiddenStatusBar )
 
--- require the composer library
-local composer = require "composer"
+-- #################### 外部プログラム設定 (始まり) ####################
+-- 画面自動削除を有効
+composer.recycleOnSceneChange = true
+-- #################### 外部プログラム設定 (終わり) ####################
 
--- load scene1
-composer.gotoScene( "scene1" )
 
--- Add any objects that should appear on all scenes below (e.g. tab bar, hud, etc)
 
+-- #################### アプリ内設定 (始まり) ##########################
+display.setStatusBar(display.HiddenStatusBar)
+-- #################### アプリ内設定 (終わり) ##########################
+
+
+
+-- MainScene起動
+composer.gotoScene("MainScene")
