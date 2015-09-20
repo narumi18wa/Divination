@@ -67,7 +67,7 @@ function scene:create(event)
 	bg[1]:setFillColor(0.95, 0.9, 0.9)
 
 	-- 画像表示
-	fortuneImage = display.newImageRect(self.view, ImageName.fortune[index], w/2, w/2)
+	fortuneImage = display.newImageRect(self.view, ImagePath.fortune[index], w/2, w/2)
 	fortuneImage.x = w/2
 	fortuneImage.y = h/4
 

@@ -59,7 +59,7 @@ end
 function scene:create( event )
 
     -- 背景オブジェクトの作成
-    local bg = display.newImageRect(self.view, ImageName.bg, w, h)
+    local bg = display.newImageRect(self.view, ImagePath.bg, w, h)
 	bg.x = w/2
 	bg.y = h/2
 

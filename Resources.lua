@@ -25,7 +25,7 @@ String = {
 
 
 -- #################### 画像名管理スペース (始まり) ####################
-ImageName = {
+ImagePath = {
 	bg = getImagePath(nil, "bg.png"),
 	fortune = {
 		getImagePath("Fortune", "fortune_1.png"),
