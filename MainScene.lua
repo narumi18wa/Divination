@@ -7,9 +7,6 @@ local physics = require("physics")
 
 
 -- #################### 外部プログラム設定 (始まり) ####################
--- 画面自動削除を有効
-composer.recycleOnSceneChange = true
-
 -- シーンを新規作成
 local scene = composer.newScene()
 
@@ -105,8 +102,8 @@ function scene:show(event)
     end
 end
 
-scene:addEventListener( "create", scene )
-scene:addEventListener( "show", scene )
+scene:addEventListener("create", scene)
+scene:addEventListener("show", scene)
 -- #################### シーン設定 (終わり) ############################
 
 
